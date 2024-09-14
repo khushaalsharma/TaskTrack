@@ -1,0 +1,6 @@
+<app-card>
+    <button [class.active]="selected" (click)="onSelectUser()"> <!--(click) = "" is angular syntax of adding event listener here it is click-->
+        <img [src]="imagePath" [alt]="user.name"/> <!--This is property binding-->
+        <span>{{ user.name }}</span> <!--We can access the public data members in the component class against this markup inside {{}} -->
+    </button>
+</app-card>

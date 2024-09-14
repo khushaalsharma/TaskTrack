@@ -1,0 +1,10 @@
+<app-card>
+<article>
+    <h2>{{task.title}}</h2>
+    <time>{{task.dueDate | date: 'fullDate'}}</time> <!-- | is called pipe in angular - which allows its users to change the format in which data is being displayed, more ways of displaying data is available, check docs -->
+    <p>{{task.summary}}</p>
+    <p class="actions">
+        <button (click)="OnCompleteTask()">Complete</button>
+    </p>
+</article>
+</app-card>
